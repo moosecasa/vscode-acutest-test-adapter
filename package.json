@@ -55,12 +55,24 @@
       "type": "object",
       "title": "Example Test Explorer configuration",
       "properties": {
-        "exampleExplorer.logpanel": {
+        "acutestExplorer.testExecutable": {
+          "description": "Relative path to executable that contains all tests",
+          "default": "",
+          "type": "string",
+          "scope": "resource"
+        },
+        "acutestExplorer.testsourceFile": {
+          "description": "Relative path to test source code containing TEST_LIST definition",
+          "default": "",
+          "type": "string",
+          "scope": "resource"
+        },
+        "acutestExplorer.logpanel": {
           "description": "write diagnotic logs to an output panel",
           "type": "boolean",
           "scope": "resource"
         },
-        "exampleExplorer.logfile": {
+        "acutestExplorer.logfile": {
           "description": "write diagnostic logs to the given file",
           "type": "string",
           "scope": "resource"
