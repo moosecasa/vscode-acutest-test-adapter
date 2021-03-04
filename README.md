@@ -3,7 +3,7 @@
 This repository contains a `AcutestTestAdapter` extension that works with the
 [Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer) extension.
 
-Acutest is a header only C/C++ unit testing framework.
+[Acutest](https://github.com/mity/acutest) is a header only C/C++ unit testing framework.
 
 More documentation can be found in the [Test Adapter API repository](https://github.com/hbenl/vscode-test-adapter-api).
 
@@ -19,8 +19,8 @@ More documentation can be found in the [Test Adapter API repository](https://git
 
 There are two settings you need to configure to make the tests work:
 
-* ```acutestExplorer.testExecutable``` Relative path in the workspace root folder to executable that contains all tests
-* ```acutestExplorer.testsourceFile``` Relative path in the workspace root folder to test source code containing TEST_LIST definition
+* ```acutestExplorer.testExecutable``` Relative path in the workspace root folder to executable that contains all tests (i.e. \bin\sampleapp.exe or /bin/sampleappbin)
+* ```acutestExplorer.testsourceFile``` Relative path in the workspace root folder to test source code containing TEST_LIST definition (i.e \test\sampleapp.c or /test/sampleapp.c)
 
 You can access these settings in ```File```->```Preferences```->```Settings```
 
@@ -31,6 +31,10 @@ You can access these settings in ```File```->```Preferences```->```Settings```
 * run `npm install`
 * run `npm run watch` or start the watch Task in VS Code
 * start the debugger
+
+To create vsix extension:
+* install vsce with `npm install -g vsce`
+* run `vsce package`
 
 You should now see a second VS Code window, the Extension Development Host.
 Open a folder in this window and click the "Test" icon in the Activity bar.
