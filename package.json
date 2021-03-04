@@ -5,7 +5,7 @@
   "icon": "img/icon.png",
   "author": "James",
   "publisher": "moosecasa",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "homepage": "https://github.com/moosecasa/vscode-acutest-test-adapter",
   "repository": {
@@ -37,6 +37,7 @@
     "vscode-test-adapter-util": "^0.7.0"
   },
   "devDependencies": {
+    "@types/node": "^14.14.31",
     "@types/vscode": "~1.23.0",
     "typescript": "^3.5.3",
     "vsce": "^1.85.1"
@@ -53,7 +54,7 @@
   "contributes": {
     "configuration": {
       "type": "object",
-      "title": "Example Test Explorer configuration",
+      "title": "Acutest Test Explorer configuration",
       "properties": {
         "acutestExplorer.testExecutable": {
           "description": "Relative path to executable that contains all tests",

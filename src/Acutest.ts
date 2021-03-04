@@ -37,7 +37,7 @@ export class CAcutestTestInfo implements TestInfo{
 let AcutestSuite: CAcutestSuiteInfo;
 
 export function loadAcutestTests(): Promise<TestSuiteInfo> {
-	var path:string = (vscode.workspace.workspaceFolders || [])[0].uri.path;
+	var path:string = (vscode.workspace.workspaceFolders || [])[0].uri.fsPath;
 	var srcfile:string = vscode.workspace.getConfiguration('acutestExplorer').testsourceFile;
 	if( path == null || srcfile == ''){
 		return Promise.resolve<TestSuiteInfo>(AcutestSuite);
@@ -66,7 +66,7 @@ export function loadAcutestTests(): Promise<TestSuiteInfo> {
 }
 
 export function getTestBinary(): string {
-    const bin: string = (vscode.workspace.workspaceFolders || [])[0].uri.path + vscode.workspace.getConfiguration("acutestExplorer").testExecutable;
+    const bin: string = (vscode.workspace.workspaceFolders || [])[0].uri.fsPath + vscode.workspace.getConfiguration("acutestExplorer").testExecutable;
     return bin;
 }
 
