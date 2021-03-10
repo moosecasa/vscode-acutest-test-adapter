@@ -6,10 +6,14 @@ This repository contains a `AcutestTestAdapter` extension that works with the
 [Acutest](https://github.com/mity/acutest) is a header only C/C++ unit testing framework.
 
 More documentation can be found in the [Test Adapter API repository](https://github.com/hbenl/vscode-test-adapter-api).
-
+VS Marketplace:<br>
 ![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/Moosecasa.vscode-acutest-test-adapter?style=plastic)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Moosecasa.vscode-acutest-test-adapter?style=plastic)
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/Moosecasa.vscode-acutest-test-adapter?style=plastic)<br>
+
+Open-VSX Marketplace:<br>
+![Open-VSX Marketplace Rating(Stars)](https://img.shields.io/open-vsx/stars/Moosecasa/vscode-acutest-test-adapter?style=plastic)
+![Open-VSX Marketplace Downloads](https://img.shields.io/open-vsx/dt/Moosecasa/vscode-acutest-test-adapter?style=plastic)<br>
 
 ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/Moosecasa.vscode-acutest-test-adapter?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Moosecasa/vscode-acutest-test-adapter?style=plastic)
