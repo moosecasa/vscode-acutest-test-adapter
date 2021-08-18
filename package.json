@@ -5,7 +5,7 @@
   "icon": "img/icon.png",
   "author": "James",
   "publisher": "moosecasa",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "homepage": "https://github.com/moosecasa/vscode-acutest-test-adapter",
   "repository": {
