@@ -1,0 +1,64 @@
+name: Report an issue with VSCode Test Adapter
+description: Report an issue with VSCode Test Adapter.
+title: "[Bug]: "
+labels: [bug]
+assignees:
+  - james2432
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue form is for reporting bugs only!
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: The problem
+      description: >-
+        Describe the issue you are experiencing here to communicate to the
+        maintainers. Tell us what you were trying to do and what happened.
+
+        Provide a clear and concise description of what the problem is.
+  - type: markdown
+    attributes:
+      value: |
+        ## Environment
+  - type: dropdown
+    validations:
+      required: true
+    attributes:
+      label: Operating system
+      options:
+        - Linux
+        - Windows
+        - Mac OS
+        - *BSD
+        - Other  
+  - type: input
+    id: version
+    validations:
+      required: true
+    attributes:
+      label: What is version of VSCode Test Adapter are you running?
+      placeholder: x.y.z
+      description: >
+        Can be found in the vscode extension's tab
+  - type: input
+    attributes:
+      label: What version of VSCode are you running?
+      description: >
+        Please specify the version of VSCode you are running by going to Help->About and copying the version.
+  - type: dropdown
+    attributes:
+      label: VS Code type
+      options:
+        - Microsoft Visual Studio Code
+        - Code (OSS)
+        - VSCodium
+        - Other 
+  - type: textarea
+    attributes:
+      label: Additional comments?
+      description: >
+        If none leave blank.
+      render: markdown
