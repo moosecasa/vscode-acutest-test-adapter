@@ -1,0 +1,20 @@
+name: Request a feature
+description: Request a feature
+title: "[Enhancement]: "
+labels: [enhancement]
+assignees:
+  - james2432
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue form is for requesting new features/providing feedback only!
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Your suggestion
+      description: >-
+        Describe what it is you desire
+
+        Provide a clear and concise description of what it is you want.
