@@ -32,7 +32,7 @@ body:
         - Linux
         - Windows
         - Mac OS
-        - *BSD
+        - BSD
         - Other  
   - type: input
     id: version
